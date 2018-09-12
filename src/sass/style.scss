@@ -1,0 +1,31 @@
+/** Imports externals */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900');
+@import 'normalize/import-now';
+
+/** Color variables */
+$black: #000;
+$orange: #f07d00;
+$white: #fff;
+
+/** Font variables */
+$Lato: 'Lato', sans-serif;
+
+/** Defaults */
+body {
+  font-family: $Lato;
+  font-size: 16px;
+}
+
+textarea,
+select,
+input,
+button {
+  outline: none;
+}
+
+/** Load modules */
+@import 'main';
+@import 'header';
+@import 'sidebar';
+@import 'keyboard';
+@import 'controls';

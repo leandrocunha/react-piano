@@ -1,0 +1,45 @@
+{
+  "name": "flowkeys",
+  "version": "1.0.0",
+  "description": "Build a small piano application that can play sounds, as well as store and retrieve sequences of played keys (songs).",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all -p compress-css build-js",
+    "build-css": "node-sass-chokidar ./src/sass -o ./dist",
+    "compress-css": "node-sass-chokidar ./src/sass -o ./dist --output-style compressed",
+    "build-js": "webpack --mode=production",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src/sass -o ./dist --watch --recursive",
+    "start-js": "webpack-dev-server",
+    "start": "npm-run-all -p watch-css start-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrocunha/react-piano-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrocunha/react-piano-task/issues"
+  },
+  "homepage": "https://github.com/leandrocunha/react-piano-task#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.3",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "node-sass-chokidar": "^1.3.3",
+    "normalize-scss": "^7.0.1",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}

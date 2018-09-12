@@ -1,0 +1,27 @@
+.Controls {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  &__Button {
+    background-color: $orange;
+    border: none;
+    border-radius: 4px;
+    color: $white;
+    cursor: pointer;
+    font-family: $Lato;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 10px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+  }
+
+  &__Input {
+    border: rgba($orange, 0.5) 2px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,10 @@
+.Header {
+  background-color: $black;
+
+  &__Brand {
+    background-image: url('https://www.flowkey.com/sites/all/themes/flowkey_1_1/css/images/flowkey_logo_orange.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
